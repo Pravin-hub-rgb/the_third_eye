@@ -3,8 +3,7 @@
     padding: 0;
 }
 
-.main-box {
-    border: 2px solid blue;
+.main-box {    
     margin: 0 auto;
     background-image: url('./back.png');
     background-size: cover;
@@ -14,12 +13,11 @@
     width: 99vw;
 }
 
-.eye-container {
-    border: 2px solid green;
+.eye-container {    
     display: flex;
     justify-content: center;
     position: relative;
-    top: 35%;
+    top: 34%;
     width: 80%;
     margin: 0 auto;
 }
@@ -47,8 +45,7 @@ p {
 }
 
 .eye-lid {
-    display: inline-block;
-    /* margin: 0 auto; */
+    display: inline-block;    
     border-radius: 20px;
     background-color: black;
     height: 13px;
@@ -85,11 +82,9 @@ p {
 
 @keyframes increaser {
     0% {
-        border-radius: 120px 0px 119px 0px;
-        /* border-color: black; */
+        border-radius: 120px 0px 119px 0px;        
     }
     100% {
-        border-radius: 32px 0px 31px 0px;
-        /* border-color: white; */
+        border-radius: 32px 0px 31px 0px;        
     }
 }
