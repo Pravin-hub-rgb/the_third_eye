@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-box {
+    background-image: url('./back.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 90vh;
+    width: 100vw;
+}
+
+.eye-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 174px;
+    left: 9px;
+    width: 95vw;
+}
+
+.eye-box {
+    border: 1px solid red;
+    background-color: white;
+    height: 38px;
+    width: 38px;
+    border-radius: 120px 0px 119px 0px;
+    transform: rotate(46deg);
+    /* top: 174px;
+    left: 5px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: increaser;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+p {
+    transform: rotate(-46deg);
+}
+
+.eye-lid {
+    display: inline-block;
+    /* margin: 0 auto; */
+    border-radius: 20px;
+    background-color: black;
+    height: 13px;
+    width: 13px;
+    transform: rotate(-46deg);
+    animation-name: mover;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.heading {
+    text-align: center;
+    height: 10vh;
+    background-color: black;
+    color: white;
+}
+
+.heading h2 {
+    padding-top: 10px;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(-15px);
+    }
+}
+
+@keyframes increaser {
+    0% {
+        border-radius: 120px 0px 119px 0px;
+        /* border-color: black; */
+    }
+    100% {
+        border-radius: 32px 0px 31px 0px;
+        /* border-color: white; */
+    }
+}
+
+
+/* @keyframes mover {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: blue;
+    }
+    100% {
+        background-color: green;
+    }
+} */
