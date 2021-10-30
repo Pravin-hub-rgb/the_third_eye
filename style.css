@@ -4,21 +4,24 @@
 }
 
 .main-box {
+    border: 2px solid blue;
+    margin: 0 auto;
     background-image: url('./back.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
     height: 80vh;
-    width: 100vw;
+    width: 99vw;
 }
 
 .eye-container {
+    border: 2px solid green;
     display: flex;
     justify-content: center;
     position: relative;
-    top: 174px;
-    left: 9px;
-    width: 95vw;
+    top: 35%;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .eye-box {
@@ -90,19 +93,3 @@ p {
         /* border-color: white; */
     }
 }
-
-
-/* @keyframes mover {
-    0% {
-        background-color: red;
-    }
-    25% {
-        background-color: yellow;
-    }
-    50% {
-        background-color: blue;
-    }
-    100% {
-        background-color: green;
-    }
-} */
