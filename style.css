@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.main-box {    
+.main-box {
     margin: 0 auto;
     background-image: url('./back.png');
     background-size: cover;
@@ -13,7 +13,7 @@
     width: 99vw;
 }
 
-.eye-container {    
+.eye-container {
     display: flex;
     justify-content: center;
     position: relative;
@@ -29,8 +29,6 @@
     width: 38px;
     border-radius: 120px 0px 119px 0px;
     transform: rotate(46deg);
-    /* top: 174px;
-    left: 5px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,7 +43,7 @@ p {
 }
 
 .eye-lid {
-    display: inline-block;    
+    display: inline-block;
     border-radius: 20px;
     background-color: black;
     height: 13px;
@@ -82,9 +80,9 @@ p {
 
 @keyframes increaser {
     0% {
-        border-radius: 120px 0px 119px 0px;        
+        border-radius: 120px 0px 119px 0px;
     }
     100% {
-        border-radius: 32px 0px 31px 0px;        
+        border-radius: 32px 0px 31px 0px;
     }
 }
