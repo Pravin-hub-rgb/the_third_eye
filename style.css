@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    background-color: black;
+}
+
+.main-box {
+    margin: 0 auto;
+    background-image: url('./back.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 98vh;
+    width: 394px;
+}
+
+@media only screen and (max-width: 480px) {
+    .main-box {
+        width: 90%;
+    }
+}
+
+.eye-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 34%;
+    left: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.eye-box {
+    border: 1px solid red;
+    background-color: white;
+    height: 38px;
+    width: 38px;
+    border-radius: 120px 0px 119px 0px;
+    transform: rotate(46deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: increaser;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+p {
+    transform: rotate(-46deg);
+}
+
+.eye-lid {
+    display: inline-block;
+    border-radius: 20px;
+    background-color: black;
+    height: 13px;
+    width: 13px;
+    transform: rotate(-46deg);
+    animation-name: mover;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.heading {
+    text-align: center;
+    /* height: 10vh; */
+    color: white;
+    position: relative;
+    top: 85vh;
+    left: 0px;
+    width: 100%;
+    margin: 2px auto;
+    /* border: 2px solid red; */
+}
+
+.heading h2 {
+    /* padding-top: 10px; */
+    width: 90%;
+    margin: 2px auto;
+    /* border: 2px solid white; */
+}
+
+@keyframes mover {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(-15px);
+    }
+}
+
+@keyframes increaser {
+    0% {
+        border-radius: 120px 0px 119px 0px;
+    }
+    100% {
+        border-radius: 32px 0px 31px 0px;
+    }
+}
+
+
+/* ************* shaker *************** */
+
+.shaker {
+    display: grid;
+    width: 394px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.shaker>div {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid red;
+    margin: 4px 0;
+}
+
+.insom {
+    background: url(./smolback.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fire {
+    background: url(./fire_1f525.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
